@@ -297,17 +297,21 @@ def main():
 )
 
     fig.update_layout(
-        paper_bgcolor="#0d1117",
-        plot_bgcolor="#0d1117",
-        font=dict(color="#8b949e", family="DM Sans"),
-        title=dict(text=f"Demand Forecast — {selected_zone}", font=dict(color="#e6edf3", size=16, family="Space Mono")),
-        xaxis=dict(showgrid=True, gridcolor="#21262d", zeroline=False, tickfont=dict(color="#8b949e")),
-        yaxis=dict(showgrid=True, gridcolor="#21262d", zeroline=False, title="Energy Demand (kWh)", tickfont=dict(color="#8b949e")),
-        legend=dict(bgcolor="#161b22", bordercolor="#30363d", borderwidth=1),
-        hovermode="x unified",
-        margin=dict(l=0, r=0, t=50, b=0),
-        height=420,
-    )
+    paper_bgcolor="#ffffff",
+    plot_bgcolor="#ffffff",
+    font=dict(color="#000000"),
+    xaxis=dict(
+        showgrid=True,
+        gridcolor="#dddddd",
+        tickfont=dict(color="#000000")
+    ),
+    yaxis=dict(
+        showgrid=True,
+        gridcolor="#dddddd",
+        tickfont=dict(color="#000000"),
+        title="Energy Demand (kWh)"
+    ),
+)
 
     st.plotly_chart(fig, use_container_width=True)
 
