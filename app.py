@@ -237,7 +237,12 @@ def main():
         </div>""", unsafe_allow_html=True)
 
     metrics = art.get("metrics", {})
-    model_metrics = metrics.get(model_choice, {})
+    model_key_map = {
+    "Linear Regression": "LinearRegression",
+    "XGBoost": "XGBoost"
+}
+
+model_metrics = metrics.get(model_key_map[model_choice], {})
     mae  = model_metrics.get("mae",  "—")
     rmse = model_metrics.get("rmse", "—")
 
