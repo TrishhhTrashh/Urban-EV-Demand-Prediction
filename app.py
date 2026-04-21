@@ -33,7 +33,7 @@ html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; }
 
 h1, h2, h3 { font-family: 'Space Mono', monospace; }
 
-.stApp { background: #0d1117; color: #e6edf3; }
+.stApp { background: #ffffff; color: #000000; }
 
 section[data-testid="stSidebar"] {
     background: #161b22;
